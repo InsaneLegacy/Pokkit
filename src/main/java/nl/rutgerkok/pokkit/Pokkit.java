@@ -66,7 +66,8 @@ public final class Pokkit {
 	 *             Always.
 	 */
 	public static final RuntimeException unsupported() {
-		throw new UnsupportedOperationException("This method is not supported yet by " + NAME + " " + VERSION);
+		return null;
+		//throw new UnsupportedOperationException("This method is not supported yet by " + NAME + " " + VERSION);
 	}
 
 	private final List<PokkitService> services = ImmutableList.of(new MainScoreboardService(), new PermissionsYml(),
